@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"servo_motor\startup_stm32f407xx.o"
+"servo_motor\main.o"
+"servo_motor\gpio.o"
+"servo_motor\tim.o"
+"servo_motor\stm32f4xx_it.o"
+"servo_motor\stm32f4xx_hal_msp.o"
+"servo_motor\stm32f4xx_hal_tim.o"
+"servo_motor\stm32f4xx_hal_tim_ex.o"
+"servo_motor\stm32f4xx_hal_rcc.o"
+"servo_motor\stm32f4xx_hal_rcc_ex.o"
+"servo_motor\stm32f4xx_hal_flash.o"
+"servo_motor\stm32f4xx_hal_flash_ex.o"
+"servo_motor\stm32f4xx_hal_flash_ramfunc.o"
+"servo_motor\stm32f4xx_hal_gpio.o"
+"servo_motor\stm32f4xx_hal_dma_ex.o"
+"servo_motor\stm32f4xx_hal_dma.o"
+"servo_motor\stm32f4xx_hal_pwr.o"
+"servo_motor\stm32f4xx_hal_pwr_ex.o"
+"servo_motor\stm32f4xx_hal_cortex.o"
+"servo_motor\stm32f4xx_hal.o"
+"servo_motor\stm32f4xx_hal_exti.o"
+"servo_motor\system_stm32f4xx.o"
+--strict --scatter "servo_motor\servo_motor.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "servo_motor.map" -o servo_motor\servo_motor.axf
